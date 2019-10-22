@@ -1,0 +1,19 @@
+.hover-border {
+  a {
+    text-decoration: none;
+    position: relative;
+    color: black;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0;
+      border-bottom: 2px solid blue;
+      transition: 0.3s;
+    }
+    &:hover:before {
+      width: 100%;
+    }
+  }
+}

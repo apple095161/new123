@@ -1,0 +1,90 @@
+$border-color: #eee;
+
+.login-register {
+  margin: 0 auto;
+  position: relative;
+  .login-register-tab {
+    display: flex;
+    border-bottom: 1px solid $border-color;
+    .title {
+      display: flex;
+      width: 200px;
+      height: 45px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid $border-color;
+      border-right: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+      border-top: 3px solid $border-color;
+      background-color: #fff;
+      cursor: pointer;
+      background-color: #fafafa;
+      color: #d2d2d2;
+    }
+    @media (max-width: 996px) {
+      .title {
+        width: 100%;
+      }
+    }
+    .title.active {
+      border: 3px solid skyblue;
+      background-color: white;
+      color: black;
+    }
+  }
+  .login-register-body {
+    height: 350px;
+    border-left: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+
+    .box-border {
+      padding-top: 40px;
+    }
+    .left {
+      .form-line {
+        height: 245px;
+        border-right: 2px solid $border-color;
+        padding-left: 40px;
+        padding-right: 20px;
+        input {
+          height: 40px;
+          width: 260px;
+          border: 0;
+          outline: none;
+          color: #6b6b6b;
+          letter-spacing: 2px;
+          border-bottom: 1px solid $border-color;
+        }
+      }
+
+      @media (max-width: 996px) {
+        .form-line {
+          border: none;
+        }
+        .login-register {
+        }
+      }
+      .input-data {
+        height: 40px;
+        width: 260px;
+        border-bottom: 1px solid $border-color;
+      }
+    }
+    .right {
+      position: relative;
+    }
+  }
+  @media (max-width: 768px) {
+    .login-register-body {
+      height: 400px;
+    }
+  }
+}
+.register-data {
+  position: relative;
+  top: 50%;
+  width: 260px;
+  top: 0;
+}

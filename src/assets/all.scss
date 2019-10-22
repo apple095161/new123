@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/functions";
+@import "./heplers/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "./heplers/grid";
+
+@import "./heplers/layout";
+@import "./heplers/reset";
+@import "./dashbord";
+@import "./heplers/hover-border-bottom";
+@import "./heplers/dropdown.scss";
+@import "./heplers/login-resgister";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+}
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.normal-size {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+  }
+}

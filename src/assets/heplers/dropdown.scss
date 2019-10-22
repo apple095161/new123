@@ -1,0 +1,17 @@
+.dropdown {
+  position: relative;
+  &:hover .dropdown-menu {
+    display: block;
+  }
+  a {
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 400px;
+    z-index: 1;
+    top: 30px;
+  }
+}
